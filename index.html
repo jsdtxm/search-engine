@@ -111,14 +111,12 @@
     <input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary"/>
     <!-- <input type="submit" value="谷歌镜像" id="google1" button type="button" class="btn btn-primary"/> -->
     <input type="submit" value="翻译" id="trans" button type="button" class="btn btn-primary"/>
-    <input type="submit" value="Intel" id="ark" button type="button" class="btn btn-primary"/>
-    <input type="submit" value="AMD" id="amd" button type="button" class="btn btn-primary"/>
     <input type="submit" value="京东" id="jd" button type="button" class="btn btn-primary" />
     <input type="submit" value="淘宝" id="taobao" button type="button" class="btn btn-primary" />
-    <!-- <input type="submit" value="微信" id="weixin" button type="button" class="btn btn-primary" /> -->
+    <input type="submit" value="微信" id="weixin" button type="button" class="btn btn-primary" />
     <input type="submit" value="知乎" id="zhihu" button type="button" class="btn btn-primary" />
-    <!-- <input type="submit" value="微博" id="weibo" button type="button" class="btn btn-primary"/> -->
-    <!-- <input type="submit" value="豆瓣" id="douban" button type="button" class="btn btn-primary"/> -->
+    <input type="submit" value="微博" id="weibo" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="豆瓣" id="douban" button type="button" class="btn btn-primary"/>
     <input type="submit" value="音乐" id="gequ" button type="button" class="btn btn-primary"/>
     <input type="submit" value="网盘" id="panci" button type="button" class="btn btn-primary"/>
     <input type="submit" value="资源" id="ziyuan" button type="button" class="btn btn-primary"/>
@@ -158,8 +156,6 @@
     var stieba=document.getElementById("tieba");
     var sditu=document.getElementById("ditu");
     var swangpan=document.getElementById("wangpan");
-    var sark=document.getElementById("ark");
-    var samd=document.getElementById("amd");
 
     //百度
     sBaidu.onclick=function(){
@@ -192,18 +188,6 @@
         return false;
       };
     });
-
-    $('#amd').click(function() {
-      var query = $('#search').val();
-      if ( query ) {window.open("http://products.amd.com/en-us/search#k=" +query);
-        return false;
-      };
-    });
-
-    sark.onclick=function(){
-      sAddress.action="https://ark.intel.com/zh-cn/search";
-      sInfor.name="q";
-    }
 
 
     //京东（已修复）在移动端访问会跳出两次窗口（已修复）
