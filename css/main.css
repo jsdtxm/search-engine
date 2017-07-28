@@ -34,6 +34,11 @@ body {
     font-size: 12px;
 }
 
+.copyright a {
+    color: #999;
+    font-size: 12px;
+}
+
 UNUSEDUNUSEDUNUSEDUNUSEDUNUSEDaudio,canvas,UNUSEDUNUSEDUNUSEDUNUSEDUNUSEDprogress,UNUSEDUNUSEDUNUSEDUNUSEDUNUSEDvideo {
 	display:inline-block;
 	vertical-align:baseline
@@ -90,18 +95,6 @@ img {
 UNUSEDUNUSEDUNUSEDUNUSEDUNUSEDh2,UNUSEDUNUSEDUNUSEDUNUSEDUNUSEDh3,p {
 	orphans:3;
 	widows:3
-}
-UNUSEDUNUSEDUNUSEDUNUSEDh2,UNUSEDUNUSEDUNUSEDUNUSEDh3 {
-	page-break-after:avoid
-}
-.btn>.caret,.dropup>.btn>.caret {
-	border-top-color:#000!important
-}
-UNUSEDUNUSEDUNUSEDUNUSEDUNUSED.table td,UNUSEDUNUSEDUNUSEDUNUSEDUNUSED.table th {
-	background-color:#fff!important
-}
-UNUSEDUNUSEDUNUSEDUNUSEDUNUSED.table-bordered td,UNUSEDUNUSEDUNUSEDUNUSEDUNUSED.table-bordered th {
-	border:1px solid #ddd!important
 }
 }@font-face {
 	font-family:'Glyphicons Halflings';
@@ -1291,22 +1284,15 @@ input[type=file]:focus,input[type=checkbox]:focus,input[type=radio]:focus {
 	line-height: 1.45;
 	color: #0000;
 	vertical-align: middle;
-
 	background-color: #FFFFFF;
 	background-image: none;
 	border: 2px solid #dee6ed;
 	border-radius: 4px;
-	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
-	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
-	-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
 }
 
 .form-control:focus {
-	border-color:#66afe9;
+	border-color:#239fdb;
 	outline:0;
-	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
-	box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
 }
 .form-control:-ms-input-placeholder {
 	color:#999

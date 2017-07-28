@@ -78,7 +78,7 @@
 
   <div class="visible-xs">
     <div class="row sLOGO">
-         <a href="./index.html"><img id="LOGO" src="./images/logo7.png"  alt="Responsive image"></a>
+         <a href="./index.html"><img id="LOGO" src="./images/logo.png"  alt="Responsive image"></a>
        <br/>
     </div>
   </div>
@@ -101,7 +101,7 @@
 
   <div class="input-group input-group-lg">
     <form action="http://www.baidu.com/s" method="get" target="_blank">
-    <input type="text" class="form-control" name="search" id="search"  baiduSug="2"  value=" " >
+    <input type="text" class="form-control" name="search" id="search" value=" " >
 
  </div>
 
@@ -109,18 +109,16 @@
     <P><center>
     <input type="submit" value="百度" id="baidu" button type="button" class="btn btn-primary" />
     <input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary"/>
-    <input type="submit" value="谷歌镜像" id="google1" button type="button" class="btn btn-primary"/>
+    <!-- <input type="submit" value="谷歌镜像" id="google1" button type="button" class="btn btn-primary"/> -->
     <input type="submit" value="京东" id="jd" button type="button" class="btn btn-primary" />
     <input type="submit" value="淘宝" id="taobao" button type="button" class="btn btn-primary" />
-   <input type="submit" value="微信" id="weixin" button type="button" class="btn btn-primary" />
+    <input type="submit" value="微信" id="weixin" button type="button" class="btn btn-primary" />
     <input type="submit" value="知乎" id="zhihu" button type="button" class="btn btn-primary" />
     <input type="submit" value="微博" id="weibo" button type="button" class="btn btn-primary"/>
     <input type="submit" value="豆瓣" id="douban" button type="button" class="btn btn-primary"/>
     <input type="submit" value="音乐" id="gequ" button type="button" class="btn btn-primary"/>
     <input type="submit" value="网盘" id="panci" button type="button" class="btn btn-primary"/>
-        <input type="submit" value="资源" id="ziyuan" button type="button" class="btn btn-primary"/>
-
-
+    <input type="submit" value="资源" id="ziyuan" button type="button" class="btn btn-primary"/>
     <input type="submit" value="地图" id="ditu" button type="button" class="btn btn-primary"/>
 
   </center></P>
@@ -152,11 +150,10 @@
     var sweibo=document.getElementById("weibo");
     var sdouban=document.getElementById("douban");
     var sgequ=document.getElementById("gequ");
-
-      var sziyuan=document.getElementById("ziyuan");
-       var stieba=document.getElementById("tieba");
-     var sditu=document.getElementById("ditu");
-     var swangpan=document.getElementById("wangpan");
+    var sziyuan=document.getElementById("ziyuan");
+    var stieba=document.getElementById("tieba");
+    var sditu=document.getElementById("ditu");
+    var swangpan=document.getElementById("wangpan");
 
     //百度
     sBaidu.onclick=function(){
@@ -178,15 +175,13 @@
 
     $('#google1').click(function() {
       var query = $('#search').val();
-      if ( query ) {        window.open("https://a.freedoo.gq/#q=" + query , "_blank");
+      if ( query ) {window.open("https://evil-mcclintock-943939.arukascloud.io/#q=" + query , "_blank");
         return false;
-
       };
     });
 
 
     //京东（已修复）在移动端访问会跳出两次窗口（已修复）
-
     $('#jd').click(function() {
       var query = $('#search').val();
       if ( query ) {
@@ -194,14 +189,6 @@
         return false;
       };
     });
-
-
-    //天猫  搜索需求下 暂时下架
-//  stianmao.onclick=function(){
-//    sAddress.action="https://list.tmall.com/search_product.htm?";
-//    sInfor.name="q";
-//    //sInfor.type="enc=utf-8";
-//  }
 
     //淘宝
     staobao.onclick=function(){
@@ -240,23 +227,23 @@
       //sInfor.type="question";
     }
     //hao123 音乐
-     sgequ.onclick=function(){
-      sAddress.action="http://music.hao123.com/search?";
-      sInfor.name="key";
-      sInfor.type="1";
-    }
+    //  sgequ.onclick=function(){
+    //   sAddress.action="http://music.hao123.com/search?";
+    //   sInfor.name="key";
+    //   sInfor.type="1";
+    // }
 
 
      //改用网易云音乐检索 移动端检索出现异常
 
-//  $('#gequ').click(function() {
-//    var query = $('#search').val();
-//    if ( query ) {
-//      window.open("http://music.163.com/#/search/m/?s=" + query + "&type=1", "_blank");
-//      return false;
-//
-//   	};
-//  });
+ $('#gequ').click(function() {
+   var query = $('#search').val();
+   if ( query ) {
+     window.open("http://music.163.com/#/search/m/?s=" + query + "&type=1", "_blank");
+     return false;
+
+  	};
+ });
 
 
 
@@ -305,7 +292,7 @@ $('#ziyuan').click(function() {
           </div>
           <div class="info">
               <span class="copyright">&copy;2017 Xiamin &nbsp;&nbsp;&nbsp;</span>
-              <span class="copyright">The MIT License</span>
+              <span class="copyright"><a href="LICENSE">The MIT License</a></span>
           </div>
       </div>
 
