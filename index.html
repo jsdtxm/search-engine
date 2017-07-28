@@ -111,12 +111,10 @@
     <input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary"/>
     <!-- <input type="submit" value="谷歌镜像" id="google1" button type="button" class="btn btn-primary"/> -->
     <input type="submit" value="翻译" id="trans" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="GitHub" id="github" button type="button" class="btn btn-primary"/>
     <input type="submit" value="京东" id="jd" button type="button" class="btn btn-primary" />
     <input type="submit" value="淘宝" id="taobao" button type="button" class="btn btn-primary" />
-    <input type="submit" value="微信" id="weixin" button type="button" class="btn btn-primary" />
     <input type="submit" value="知乎" id="zhihu" button type="button" class="btn btn-primary" />
-    <input type="submit" value="微博" id="weibo" button type="button" class="btn btn-primary"/>
-    <input type="submit" value="豆瓣" id="douban" button type="button" class="btn btn-primary"/>
     <input type="submit" value="音乐" id="gequ" button type="button" class="btn btn-primary"/>
     <input type="submit" value="网盘" id="panci" button type="button" class="btn btn-primary"/>
     <input type="submit" value="资源" id="ziyuan" button type="button" class="btn btn-primary"/>
@@ -142,18 +140,15 @@
     var sInfor=document.getElementById("search");
     var sBaidu=document.getElementById("baidu");
     var sGoogle=document.getElementById("google");
-    var sGoogle1=document.getElementById("google1");
+    // var sGoogle1=document.getElementById("google1");
     var strans=document.getElementById("trans");
+    var sgithub=document.getElementById("github");
     var sjd=document.getElementById("jd");
     var stianmao=document.getElementById("tianmao");
     var staobao=document.getElementById("taobao");
-    var sWeixin=document.getElementById("weixin");
     var sZhihu=document.getElementById("zhihu");
-    var sweibo=document.getElementById("weibo");
-    var sdouban=document.getElementById("douban");
     var sgequ=document.getElementById("gequ");
     var sziyuan=document.getElementById("ziyuan");
-    var stieba=document.getElementById("tieba");
     var sditu=document.getElementById("ditu");
     var swangpan=document.getElementById("wangpan");
 
@@ -182,14 +177,18 @@
       };
     });
 
+    //百度翻译
     $('#trans').click(function() {
       var query = $('#search').val();
       if ( query ) {window.open("http://fanyi.baidu.com/#en/zh/" + query);
         return false;
       };
     });
-
-
+    //github
+    sgithub.onclick=function(){
+      sAddress.action="https://github.com/search";
+      sInfor.name="q";
+    }
     //京东（已修复）在移动端访问会跳出两次窗口（已修复）
     $('#jd').click(function() {
       var query = $('#search').val();
@@ -205,56 +204,19 @@
       sInfor.name="q";
     }
 
-      //微信  恢复上线
-     $('#weixin').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("http://weixin.sogou.com/weixin?type=2&query=" + query + "&ie=utf8", "_blank");
-        return false;
-
-      };
-    });
-
     //知乎
     sZhihu.onclick=function(){
       sAddress.action="https://www.zhihu.com/search";
       sInfor.name="q";
       sInfor.type="question";
     }
-    $('#weibo').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("http://s.weibo.com/weibo/" + query, "_blank");
-        return false;
-      };
-    });
 
-    //豆瓣
-    sdouban.onclick=function(){
-      sAddress.action="https://www.douban.com/search?";
-      sInfor.name="q";
-      //sInfor.type="question";
-    }
     //hao123 音乐
      sgequ.onclick=function(){
       sAddress.action="http://music.hao123.com/search?";
       sInfor.name="key";
       sInfor.type="1";
     }
-
-
-     //改用网易云音乐检索 移动端检索出现异常
-
- // $('#gequ').click(function() {
- //   var query = $('#search').val();
- //   if ( query ) {
- //     window.open("http://music.163.com/#/search/m/?s=" + query + "&type=1", "_blank");
- //     return false;
- //
- //  	};
- // });
-
-
 
 // 胖次  另一个检索入口
 
