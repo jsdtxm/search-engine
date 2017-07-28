@@ -24,19 +24,15 @@ body {
     margin-top: 10px;
 }
 
-.about a {
+.about{
     color: #999;
     font-size: 13px;
 }
 
-.copyright {
-    color: #999;
-    font-size: 12px;
-}
 
-.copyright a {
+.about a {
     color: #999;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 UNUSEDUNUSEDUNUSEDUNUSEDUNUSEDaudio,canvas,UNUSEDUNUSEDUNUSEDUNUSEDUNUSEDprogress,UNUSEDUNUSEDUNUSEDUNUSEDUNUSEDvideo {

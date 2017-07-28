@@ -227,23 +227,23 @@
       //sInfor.type="question";
     }
     //hao123 音乐
-    //  sgequ.onclick=function(){
-    //   sAddress.action="http://music.hao123.com/search?";
-    //   sInfor.name="key";
-    //   sInfor.type="1";
-    // }
+     sgequ.onclick=function(){
+      sAddress.action="http://music.hao123.com/search?";
+      sInfor.name="key";
+      sInfor.type="1";
+    }
 
 
      //改用网易云音乐检索 移动端检索出现异常
 
- $('#gequ').click(function() {
-   var query = $('#search').val();
-   if ( query ) {
-     window.open("http://music.163.com/#/search/m/?s=" + query + "&type=1", "_blank");
-     return false;
-
-  	};
- });
+ // $('#gequ').click(function() {
+ //   var query = $('#search').val();
+ //   if ( query ) {
+ //     window.open("http://music.163.com/#/search/m/?s=" + query + "&type=1", "_blank");
+ //     return false;
+ //
+ //  	};
+ // });
 
 
 
@@ -270,7 +270,7 @@ $('#ziyuan').click(function() {
     });
 
 
-// 胖次  另一个检索入口
+// 高德
 
  $('#ditu').click(function() {
       var query = $('#search').val();
@@ -290,9 +290,9 @@ $('#ziyuan').click(function() {
               <a href="https://github.com/jsdtxm"> Github &nbsp;</a>
               <a href="http://www.xiamin.win/about.html"> 关于Xiamin &nbsp;</a>
           </div>
-          <div class="info">
-              <span class="copyright">&copy;2017 Xiamin &nbsp;&nbsp;&nbsp;</span>
-              <span class="copyright"><a href="LICENSE">The MIT License</a></span>
+          <div class="about">
+              <span>&copy;2017 Xiamin &nbsp;&nbsp;&nbsp;</span>
+              <span><a href="\LICENSE">The MIT License</a></span>
           </div>
       </div>
 
