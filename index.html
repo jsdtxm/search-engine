@@ -109,15 +109,15 @@
     <P><center>
     <input type="submit" value="百度" id="baidu" button type="button" class="btn btn-primary" />
     <input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary"/>
-    <!-- <input type="submit" value="谷歌镜像" id="google1" button type="button" class="btn btn-primary"/> -->
+    <input type="submit" value="DDG" id="DDG" button type="button" class="btn btn-primary"/>
     <input type="submit" value="翻译" id="trans" button type="button" class="btn btn-primary"/>
     <input type="submit" value="GitHub" id="github" button type="button" class="btn btn-primary"/>
     <input type="submit" value="京东" id="jd" button type="button" class="btn btn-primary" />
     <input type="submit" value="淘宝" id="taobao" button type="button" class="btn btn-primary" />
     <input type="submit" value="知乎" id="zhihu" button type="button" class="btn btn-primary" />
     <input type="submit" value="音乐" id="gequ" button type="button" class="btn btn-primary"/>
-    <input type="submit" value="网盘" id="panci" button type="button" class="btn btn-primary"/>
-    <input type="submit" value="资源" id="ziyuan" button type="button" class="btn btn-primary"/>
+    <!-- <input type="submit" value="网盘" id="panci" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="资源" id="ziyuan" button type="button" class="btn btn-primary"/> -->
     <input type="submit" value="地图" id="ditu" button type="button" class="btn btn-primary"/>
 
   </center></P>
@@ -140,17 +140,16 @@
     var sInfor=document.getElementById("search");
     var sBaidu=document.getElementById("baidu");
     var sGoogle=document.getElementById("google");
-    // var sGoogle1=document.getElementById("google1");
+    var sDDG=document.getElementById("DDG");
     var strans=document.getElementById("trans");
     var sgithub=document.getElementById("github");
     var sjd=document.getElementById("jd");
-    var stianmao=document.getElementById("tianmao");
     var staobao=document.getElementById("taobao");
     var sZhihu=document.getElementById("zhihu");
     var sgequ=document.getElementById("gequ");
-    var sziyuan=document.getElementById("ziyuan");
+    // var sziyuan=document.getElementById("ziyuan");
     var sditu=document.getElementById("ditu");
-    var swangpan=document.getElementById("wangpan");
+    // var swangpan=document.getElementById("wangpan");
 
     //百度
     sBaidu.onclick=function(){
@@ -163,16 +162,10 @@
       sInfor.name="q";
     };
 
-    //Google镜像  2017 年 7 月 19 日 更换
-
-    //备用
-    //https://pedantic-bell-1962.arukascloud.io/
-    //https://evil-mcclintock-943939.arukascloud.io/
-    //https://backstabbing-fermi-989699.arukascloud.io/
-
-    $('#google1').click(function() {
+    //DDG
+    $('#DDG').click(function() {
       var query = $('#search').val();
-      if ( query ) {window.open("https://evil-mcclintock-943939.arukascloud.io/#q=" + query , "_blank");
+      if ( query ) {window.open("https://duckduckgo.com/?q=" + query , "_blank");
         return false;
       };
     });
@@ -219,7 +212,7 @@
     }
 
 // 胖次  另一个检索入口
-
+/*
  $('#panci').click(function() {
       var query = $('#search').val();
       if ( query ) {
@@ -236,10 +229,9 @@ $('#ziyuan').click(function() {
       if ( query ) {
         window.open("http://ifkdy.com/?q=" + query + "&p=1", "_blank");
         return false;
-
      	};
     });
-
+*/
 
 // 高德
 
@@ -248,11 +240,8 @@ $('#ziyuan').click(function() {
       if ( query ) {
         window.open("http://ditu.amap.com/search?query=" + query + " ", "_blank");
         return false;
-
      	};
     });
-
-
   </script>
 
   <div class="footing">
