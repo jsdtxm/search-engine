@@ -25,7 +25,6 @@
     bottom: 0;
     left: 0;
     right: 0;
-
     margin: 0;
     padding: 0;
   }
@@ -33,7 +32,6 @@
     position: fixed;
     top: 0;
     left: 0;
-
     z-index: -100;
   }
 </style>
@@ -105,20 +103,17 @@
 
  </div>
 
-
     <P><center>
     <input type="submit" value="百度" id="baidu" button type="button" class="btn btn-primary" />
-    <input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary"/>
-    <input type="submit" value="DDG" id="DDG" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="必应" id="bing" button type="button" class="btn btn-primary"/>
     <input type="submit" value="翻译" id="trans" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="StackOverflow" id="stackoverflow" button type="button" class="btn btn-primary"/>
     <input type="submit" value="GitHub" id="github" button type="button" class="btn btn-primary"/>
     <input type="submit" value="京东" id="jd" button type="button" class="btn btn-primary" />
     <input type="submit" value="淘宝" id="taobao" button type="button" class="btn btn-primary" />
     <input type="submit" value="知乎" id="zhihu" button type="button" class="btn btn-primary" />
-    <input type="submit" value="音乐" id="gequ" button type="button" class="btn btn-primary"/>
-    <!-- <input type="submit" value="网盘" id="panci" button type="button" class="btn btn-primary"/>
-    <input type="submit" value="资源" id="ziyuan" button type="button" class="btn btn-primary"/> -->
-    <input type="submit" value="地图" id="ditu" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="DDG" id="DDG" button type="button" class="btn btn-primary"/>
 
   </center></P>
 
@@ -146,15 +141,21 @@
     var sjd=document.getElementById("jd");
     var staobao=document.getElementById("taobao");
     var sZhihu=document.getElementById("zhihu");
-    var sgequ=document.getElementById("gequ");
-    // var sziyuan=document.getElementById("ziyuan");
-    var sditu=document.getElementById("ditu");
-    // var swangpan=document.getElementById("wangpan");
+    var sbing=document.getElementById("bing");
+    var sstackoverflow=document.getElementById("stackoverflow");
 
     //百度
     sBaidu.onclick=function(){
       sAddress.action="https://www.baidu.com/s";
       sInfor.name="wd";
+    }
+    sstackoverflow.onclick=function(){
+      sAddress.action="https://stackoverflow.com/search";
+      sInfor.name="q";
+    }
+    sbing.onclick=function(){
+      sAddress.action="https://cn.bing.com/search";
+      sInfor.name="q";
     }
     //Google
     sGoogle.onclick=function(){
@@ -204,44 +205,6 @@
       sInfor.type="question";
     }
 
-    //hao123 音乐
-     sgequ.onclick=function(){
-      sAddress.action="http://music.hao123.com/search?";
-      sInfor.name="key";
-      sInfor.type="1";
-    }
-
-// 胖次  另一个检索入口
-/*
- $('#panci').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("http://www.panc.cc/s/" + query + "/td_0", "_blank");
-        return false;
-
-     	};
-    });
-
-    //新增疯狂影视搜索入口
-
-$('#ziyuan').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("http://ifkdy.com/?q=" + query + "&p=1", "_blank");
-        return false;
-     	};
-    });
-*/
-
-// 高德
-
- $('#ditu').click(function() {
-      var query = $('#search').val();
-      if ( query ) {
-        window.open("http://ditu.amap.com/search?query=" + query + " ", "_blank");
-        return false;
-     	};
-    });
   </script>
 
   <div class="footing">
