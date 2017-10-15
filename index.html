@@ -97,6 +97,7 @@
     <form action="http://www.baidu.com/s" method="get" target="_blank">
     <input type="text" class="form-control" name="search" id="search" value=" " >
 
+
  </div>
 
     <P><center>
@@ -110,6 +111,7 @@
     <input type="submit" value="知乎" id="zhihu" button type="button" class="btn btn-primary" />
     <input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary"/>
     <input type="submit" value="DDG" id="DDG" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="快递" id="kuaidi" button type="button" class="btn btn-primary"/>
 
   </center></P>
 
@@ -139,6 +141,7 @@
     var sZhihu=document.getElementById("zhihu");
     var sbing=document.getElementById("bing");
     var sstackoverflow=document.getElementById("stackoverflow");
+    var skuaidi=document.getElementById("kuaidi");
 
     //百度
     sBaidu.onclick=function(){
@@ -171,6 +174,13 @@
     $('#trans').click(function() {
       var query = $('#search').val();
       if ( query ) {window.open("http://fanyi.baidu.com/#en/zh/" + query);
+        return false;
+      };
+    });
+    //kuaidi100
+    $('#kuaidi').click(function() {
+      var query = $('#search').val();
+      if ( query ) {window.open("https://m.kuaidi100.com/result.jsp?nu=" + query);
         return false;
       };
     });
@@ -212,6 +222,7 @@
       <div class="about">
           <span>Copyright &copy;2017 Xiamin &nbsp;&nbsp;&nbsp;</span>
           <span><a href="http://so.xiamin.win/LICENSE.html">The MIT License</a></span>
+
       </div>
     </div>
   </body>
