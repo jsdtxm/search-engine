@@ -1280,7 +1280,7 @@ input[type=file]:focus,input[type=checkbox]:focus,input[type=radio]:focus {
 	padding: 6px 12px;
 	font-size: 16px;
 	line-height: 1.45;
-	color: #0000;
+	color: #000;
 	vertical-align: middle;
 	background-color: #FFFFFF;
 	background-image: none;
