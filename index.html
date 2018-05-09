@@ -49,8 +49,8 @@
 
  <ul class="nav nav-tabs navbar-static-top"  role="navigation" >
   <div id="header">
-    <a class="LOGO1" href="http://so.xiamin.win"><img id="zb" width=150 height=31 src="./images/logo2.png"  alt="XM聚合搜索"></a>
-    <a href="http://www.xiamin.win/" target="_blank" class="yb">XM's 博客</a>
+    <a class="LOGO1"><img id="zb" width=150 height=31 src="./images/logo2.png"  alt="XM聚合搜索"></a>
+    <a href="http://so.xiamin.win/" target="_blank" class="yb">XM's 博客</a>
   </div>
  </ul>
 
@@ -72,7 +72,7 @@
 
   <div class="visible-xs">
     <div class="row sLOGO">
-         <a href="./index.html"><img id="LOGO" src="./images/logo.png"  alt="Responsive image"></a>
+         <img id="LOGO" src="./images/logo.png"  alt="Responsive image">
        <br/>
     </div>
   </div>
@@ -88,7 +88,7 @@
   <div class="hidden-xs">
     <div class="row LOGO">
       <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3">
-        <a href="./index.html"><img id="LOGO" src="./images/logo.png"  alt="Responsive image"></a>
+        <img id="LOGO" src="./images/logo.png"  alt="Responsive image">
       </div>
     </div>
   </div>
@@ -110,7 +110,7 @@
     <input type="submit" value="淘宝" id="taobao" button type="button" class="btn btn-primary" />
     <input type="submit" value="知乎" id="zhihu" button type="button" class="btn btn-primary" />
     <input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary"/>
-    <input type="submit" value="DDG" id="DDG" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="哔哩哔哩" id="bilibili" button type="button" class="btn btn-primary"/>
     <input type="submit" value="快递" id="kuaidi" button type="button" class="btn btn-primary"/>
 
   </center></P>
@@ -133,7 +133,7 @@
     var sInfor=document.getElementById("search");
     var sBaidu=document.getElementById("baidu");
     var sGoogle=document.getElementById("google");
-    var sDDG=document.getElementById("DDG");
+    var sBilibili=document.getElementById("bilibili");
     var strans=document.getElementById("trans");
     var sgithub=document.getElementById("github");
     var sjd=document.getElementById("jd");
@@ -162,10 +162,10 @@
       sInfor.name="q";
     };
 
-    //DDG
-    $('#DDG').click(function() {
+    //bilibili
+    $('#bilibili').click(function() {
       var query = $('#search').val();
-      if ( query ) {window.open("https://duckduckgo.com/?q=" + query , "_blank");
+      if ( query ) {window.open("https://search.bilibili.com/all?keyword=" + query , "_blank");
         return false;
       };
     });
@@ -189,7 +189,7 @@
       sAddress.action="https://github.com/search";
       sInfor.name="q";
     }
-    //京东（已修复）在移动端访问会跳出两次窗口（已修复）
+    //京东
     $('#jd').click(function() {
       var query = $('#search').val();
       if ( query ) {
@@ -217,10 +217,10 @@
     <div class="about">
         <a href="http://byr.wiki">&nbsp;北邮人导航&nbsp;</a>
         <a href="https://github.com/jsdtxm">&nbsp;本站源码&nbsp;</a>
-        <a href="http://www.xiamin.win/about.html">&nbsp;关于Xiamin&nbsp;</a>
+        <a href="http://so.xiamin.win/about.html">&nbsp;关于Xiamin&nbsp;</a>
       </div>
       <div class="about">
-          <span>Copyright &copy;2017 Xiamin &nbsp;&nbsp;&nbsp;</span>
+          <span>Copyright &copy;2018 Xiamin &nbsp;&nbsp;&nbsp;</span>
           <span><a href="http://so.xiamin.win/LICENSE.html">The MIT License</a></span>
 
       </div>
